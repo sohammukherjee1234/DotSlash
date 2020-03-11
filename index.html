@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <!--Modal buttons-->
+    <button class="modal-open" data-modal="modal1">Goto Event1</button>
+    <button class="modal-open" data-modal="modal2">Goto Event2</button>
+    <button class="modal-open" data-modal="modal3">Goto Event3</button>
+    <!--Modals-->
+
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">Event1 <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+            <div class="modal-body">event 1 details</div>
+            <div class="modal-footer"><button class="link modal-close">Close</button></div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">Event2 <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+            <div class="modal-body">event 2  details</div>
+            <div class="modal-footer"><button class="link modal-close">Close</button></div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">Event3 <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+
+            <div class="modal-body">event 3 details</div>
+            <div class="modal-footer"><button class="link modal-close">Close</button></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
