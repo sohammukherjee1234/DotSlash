@@ -1,0 +1,29 @@
+.path {
+    stroke-dasharray: 50;
+
+    animation: dash 8s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+
+.SVG {
+    width: 80%;
+    height: 200px;
+    margin-top: calc(50vh - 100px); 
+    z-index: 2;
+}
+
+.upper-display{
+    background-color: #434343;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-attachment: fixed;
+    z-index: 1;
+}

@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const uglify = require('gulp-uglify');
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const uglify = composer(uglifyes, console);
 const autoPrefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');

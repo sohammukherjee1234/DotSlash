@@ -1,0 +1,1 @@
+import TypeIt from"typeit";new TypeIt("text#svg-text",{strings:"./ DotSlash ./",speed:200,loop:!0,html:!0,deleteSpeed:30}).go();
