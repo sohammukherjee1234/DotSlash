@@ -1,1 +1,64 @@
  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotSlash</title>
+
+</head>
+
+<body>
+    <style>
+        .path {
+            stroke-dasharray: 50;
+
+            animation: dash 8s linear infinite;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 1000;
+            }
+        }
+
+        .SVG {
+            background-color: #434343;
+            border: 15px solid black;
+            box-shadow: 1px 1px 6px #204343;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+
+
+    <div>
+        <svg class="SVG" width="710" height="260" viewBox="50 5 40 50">
+            <defs>
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+                </style>
+            </defs>
+            <path d="M10,10 H 130 V 50 H 10 L 10 10" fill="none" class="path" stroke="#00ff43"></path>
+            <text x="20" y="35" font-family="Montserrat" fill="white" id="svg-text"></text>
+        </svg>
+        <p class="writing"></p>
+    </div>
+
+    <script>
+        new TypeIt('text#svg-text', {
+            strings: "./ DotSlash ./",
+            speed: 200,
+            loop: true,
+            html: true,
+            deleteSpeed: 30,
+
+
+        }
+
+        ).go();
+    </script>
+
+
+</body>
+
+</html>
