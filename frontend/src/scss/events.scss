@@ -1,0 +1,256 @@
+$color1: #fc85ae;
+$color2: #9e579d;
+$color3: #574b90;
+$color4: #303a52;
+$color5: #f4fa9c;
+$color6:#493f80;
+@media screen and (max-width:600px) {
+    .event{
+        background-color: $color3;
+        color: $color5;
+    }
+    .event1 {
+        color: $color5;
+    }
+    
+    body{
+    
+        background-image:linear-gradient($color3,$color3);
+    }
+    .nav1{
+        background-image: linear-gradient(to right,$color1 ,$color2);
+        font-size: 1.1em;
+        text-decoration: bold;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    .nav-link {
+        color:$color4!important;
+        }
+    .nav-link:hover{
+        color: $color5!important;
+        background-image: linear-gradient(to right,$color2 ,$color3);
+    }
+    
+    
+    .maintech{
+        width: 100%;
+        height: 80%;
+        display:relative;
+        align-items: center;
+
+    border-radius: 5%;
+    background-color:$color6;
+    margin-top:12%;
+    }
+    .blanksp{
+
+    height: 10%;
+    }
+    
+    .abouttech{
+        color: $color5;
+        height:40%;
+        align-items: center;
+        padding:5%;
+        font-size:65%;
+        border-radius:5%;
+    }
+    .image1{
+        background-image:url("https://picsum.photos/500");
+        height: 50%;
+        object-fit: cover;
+        padding: 10px;
+    }
+    .image2{
+        background-image:url("https://picsum.photos/500");
+        height: 50%;
+        object-fit: cover;
+        padding: 10px;
+    }
+    .nametech{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .oddtech{
+        text-align: left;
+
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    }
+    .eventech{
+        text-align: right;
+
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+    }
+
+    
+@media screen and (min-width:1100px) {
+.event{
+	background-color: $color3;
+	color: $color5;
+}
+.event1 {
+	color: $color5;
+}
+
+body{
+
+    background-image:linear-gradient($color3,$color3);
+}
+.nav1{
+    background-image: linear-gradient(to right,$color1 ,$color2);
+    font-size: 1.1em;
+	text-decoration: bold;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.nav-link {
+    color:$color4!important;
+    }
+.nav-link:hover{
+    color: $color5!important;
+    background-image: linear-gradient(to right,$color2 ,$color3);
+}
+
+
+.maintech{
+    width: 100%;
+    height: 75%;
+    display:flex;
+    align-items: center;
+    border-radius: 5%;
+    margin-top:12%;
+	background-color:$color6;
+}
+.blanksp{
+    width: 15%;
+    height: 100%;
+}
+
+.abouttech{
+    color: $color5;
+    width:35%;
+    height: 100%;
+    align-items: center;
+	padding:5%;
+	font-size:95%;
+}
+.image1{
+    background-image:url("https://picsum.photos/500");
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+	padding: 10px;
+}
+.image2{
+    background-image:url("https://picsum.photos/500");
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+	padding: 10px;
+}
+.nametech{
+    font-weight: bold;
+    font-size: 2.2em;
+}
+.oddtech{
+    text-align: left;
+
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.eventech{
+    text-align: right;
+
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+
+}
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:1100px) {
+    .event{
+        background-color: $color3;
+        color: $color5;
+    }
+    .event1 {
+        color: $color5;
+    }
+    
+    body{
+    
+        background-image:linear-gradient($color3,$color3);
+    }
+    .nav1{
+        background-image: linear-gradient(to right,$color1 ,$color2);
+        font-size: 1.1em;
+        text-decoration: bold;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    .nav-link {
+        color:$color4!important;
+        }
+    .nav-link:hover{
+        color: $color5!important;
+        background-image: linear-gradient(to right,$color2 ,$color3);
+    }
+    
+    
+    .maintech{
+        width: 100%;
+        height: 80%;
+        display:relative;
+        align-items: center;
+        border-radius: 5%;
+        margin-top:12%;
+        background-color:$color6;
+    }
+    
+    
+    .abouttech{
+        color: $color5;
+        height:40%;
+        align-items: center;
+        padding:5%;
+        font-size:95%;
+    }
+    .image1{
+        background-image:url("https://picsum.photos/500");
+        height: 50%;
+        object-fit: cover;
+        padding: 10px;
+    }
+    .image2{
+        background-image:url("https://picsum.photos/500");
+        height: 50%;
+        object-fit: cover;
+        padding: 10px;
+    }
+    .nametech{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .oddtech{
+        text-align: left;
+
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    }
+    .eventech{
+        text-align: right;
+
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+
+    .blanksp{
+
+        height: 10%;
+        }
+    }
