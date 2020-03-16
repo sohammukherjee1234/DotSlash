@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Animations</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style1.css">
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Material Design for Bootstrap fonts and icons -->
+     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
+ 
+     <!-- Material Design for Bootstrap CSS -->
+     <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
+     
+     <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div id="contaniner-fluid">
+        <div id="wrapper">
+            <div id="dot-slash">
+                <span class="text">DOT &nbsp &nbsp S&nbsp_ASH</span>
+                <div id="slash" ></div>
+                <div id="dot" ></div>
+                <div class="loader-section1 section-left"></div>
+                <div class="loader-section1 section-right"></div>
+            </div>
+            <div id="loader-wrapper">
+                <div id="loader"></div>
+                <div class="loader-section section-top"></div>
+                <div class="loader-section section-bottom"></div>
+                
+            </div>
+        
+        
+        </div>
+        
+        <div id="content">
+            
+            <h2>This is our page title</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+    </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script lang="javascript">
+$(document).ready(function() {
+ 
+ setTimeout(function(){
+     $('body').addClass('loaded');
+     $('h1').css('color','#222222');
+ }, 800);
+
+});
+</script>
