@@ -1,0 +1,313 @@
+#wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#dot-slash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+}
+#wrapper .loader-section1 {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+    
+#wrapper .loader-section1.section-left {
+    left: 0;
+}
+ 
+#wrapper .loader-section1.section-right {
+    right: 0;
+}
+
+#dot {
+    display: block;
+    position: absolute;
+    left: 47vw;
+    width: 0.7vw;
+    height: 0.7vw;
+    z-index: 1500;
+    border-radius: 50%;
+    background-color: rgb(220, 202, 202);
+    transform-origin: 10% 10%;
+    -webkit-animation: slideDot 0.9s linear forwards;
+    animation: slideDot 1s linear forwards;
+    animation-delay: 2s;
+}
+
+#slash {
+    display: block;
+    position: absolute;
+    left: 51vw;
+    width: 8.5vw;
+    height: 0.4vw;
+    border-color: rgb(220, 202, 202);
+    background-color: rgb(220, 202, 202);
+    border-top: 1vh rgb(220, 202, 202);
+    z-index: 1500;
+    transform: rotate(-65deg);
+    transform-origin: 50% 50%;
+    -webkit-animation: slideSlash 0.9s linear forwards;
+    animation: slideSlash 1s linear forwards;
+    animation-delay: 2s;
+}
+
+
+    @keyframes slideDot {
+        0% {
+            left: 47%;
+        }
+        100% {
+            left: 37%;
+        }
+    }
+    
+        @keyframes slideSlash {
+            from {
+                left: 51%;
+            }
+            to {
+                left: 56%;
+            }
+        }
+
+    .text{
+        position: absolute;
+        margin: 0px;
+        padding: 40px;
+        font-size:10vw;
+        font:black;
+        border: 2px solid white;
+        /* -webkit-animation: textcolor 4s forwards;
+        animation: textcolor 4s forwards; */
+        -webkit-animation: glow .8s ease-in-out infinite alternate;
+        -moz-animation: glow .8s ease-in-out infinite alternate;
+        animation: glow .8s ease-in-out infinite alternate;
+        animation-delay: 3s;
+    }
+    
+    /* span {
+        color: #EEEEEE;
+    } */
+
+    @-webkit-keyframes textcolor {
+        0% {
+            border: 1px solid black;
+            color: solid black;
+        }
+        100% {
+            border: 1px solid white;
+            color: white;
+        }
+    }
+    
+        @keyframes textcolor {
+            0% {
+                color: solid black;
+                border: 1px solid black;
+            }
+            100% {
+                color:white;
+                border: 1px solid white;
+            }
+        }
+
+        
+    .loaded #wrapper .loader-section1.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(-100%);  /* IE 9 */
+        transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+    }
+     
+    .loaded #wrapper .loader-section1.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(100%);  /* IE 9 */
+        transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    }
+        
+.loaded #wrapper {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+            -webkit-transition: all 0.5s 4s ease-out; 
+            transition: all 0.5s 4s ease-out;
+}
+    
+.loaded #wrapper .loader-section1.section-right,
+.loaded #wrapper .loader-section1.section-left {
+    -webkit-transition: all 0.5s 2.2s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    transition: all 0.5s 2.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #f0dee7, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+    #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-top: 0.6vh solid #3498db;
+        z-index: 1500;
+        
+        border-radius: 50%;
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+    }
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-top: 0.8vh solid #e74c3c;
+        border-radius: 50%;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-top: 0.4vh solid #f9c922;
+        border-radius: 50%;
+        -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    #loader-wrapper .loader-section {
+        position: fixed;
+        width: 100%;
+        height: 51%;
+        background: rgb(66, 62, 62);
+        z-index: 1000;
+    }
+     
+    #loader-wrapper .loader-section.section-top {
+        top: 0;
+    }
+     
+    #loader-wrapper .loader-section.section-bottom {
+        bottom: 0;
+    }
+
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }
+
+    #loader {
+        z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+    }
+
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out; 
+                transition: all 0.3s ease-out;
+    }
+
+.loaded #loader-wrapper {
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+
+            -webkit-transition: all 0.3s 0.6s ease-out; 
+            transition: all 0.3s 0.6s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-top,
+.loaded #loader-wrapper .loader-section.section-bottom {
+ 
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.no-js #loader-wrapper {
+    display: none;
+}
+.no-js span {
+    color: #222222;
+}
+
