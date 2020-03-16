@@ -57,16 +57,12 @@ $color6:#493f80;
         border-radius:5%;
     }
     .image1{
-        background-image:url("https://picsum.photos/500");
-        height: 50%;
-        object-fit: cover;
-        padding: 10px;
+        height:50%;
     }
-    .image2{
-        background-image:url("https://picsum.photos/500");
-        height: 50%;
-        object-fit: cover;
-        padding: 10px;
+    .image1>img{
+        width:100%; 
+        height:100%; 
+        object-fit:cover; 
     }
     .nametech{
         font-weight: bold;
@@ -84,6 +80,15 @@ $color6:#493f80;
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
     }
+
+.oddtech>img{
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.eventech>img{
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
     }
 
     
@@ -139,18 +144,19 @@ body{
 	font-size:95%;
 }
 .image1{
-    background-image:url("https://picsum.photos/500");
     width: 50%;
     height: 100%;
     object-fit: cover;
-	padding: 10px;
 }
-.image2{
-    background-image:url("https://picsum.photos/500");
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-	padding: 10px;
+.oddtech>img{
+
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.eventech>img{
+
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 .nametech{
     font-weight: bold;
@@ -221,16 +227,12 @@ body{
         font-size:95%;
     }
     .image1{
-        background-image:url("https://picsum.photos/500");
-        height: 50%;
-        object-fit: cover;
-        padding: 10px;
+        height:50%;
     }
-    .image2{
-        background-image:url("https://picsum.photos/500");
-        height: 50%;
-        object-fit: cover;
-        padding: 10px;
+    .image1>img{
+        width:100%; 
+        height:100%; 
+        object-fit:cover; 
     }
     .nametech{
         font-weight: bold;
@@ -249,6 +251,14 @@ body{
         border-bottom-left-radius: 5%;
     }
 
+.oddtech>img{
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.eventech>img{
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
     .blanksp{
 
         height: 10%;
